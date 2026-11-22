@@ -76,3 +76,4 @@ GitHub Actions (`.github/workflows/ci.yml`):
 - в pull request в `master` проверяются форматирование, линтер, типы, тесты и сборка Docker-образа;
 - после мержа в `master` образ дополнительно публикуется в
   `ghcr.io/<владелец>/unn-2026-goriacheva`.
+
