@@ -30,7 +30,7 @@ class TelegramMessenger(Messenger):
         )
         with urllib.request.urlopen(request, timeout=REQUEST_TIMEOUT) as response:
             payload: dict[str, Any] = json.loads(response.read())
-            
+
         if not payload["ok"]:
             raise RuntimeError(payload.get("description", "Ошибка Telegram API"))
         return payload

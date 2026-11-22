@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 def main() -> None:
     logging.basicConfig(level=logging.INFO)
-    
+
     messenger = TelegramMessenger(
         token=os.environ["TELEGRAM_TOKEN"],
         base_url=os.environ["TELEGRAM_BASE_URL"],
